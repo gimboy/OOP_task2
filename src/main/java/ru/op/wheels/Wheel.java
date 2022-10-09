@@ -1,6 +1,6 @@
-package ru.op;
+package ru.op.wheels;
 
-public class Wheel {
+public abstract class Wheel implements Rotating{
     private boolean isSteeringWheel = false;
 
     public void rotate() {

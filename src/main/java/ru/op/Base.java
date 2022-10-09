@@ -1,5 +1,8 @@
 package ru.op;
 
+import ru.op.wheels.DefaultWheel;
+import ru.op.wheels.Wheel;
+
 public class Base {
     private Engine engine;
     private Wheel wheel1;
@@ -17,12 +20,12 @@ public class Base {
 
     public Base() {
         engine = new Engine();
-        wheel1 = new Wheel();
+        wheel1 = new DefaultWheel();
         wheel1.setSteeringWheel();
-        wheel2 = new Wheel();
+        wheel2 = new DefaultWheel();
         wheel2.setSteeringWheel();
-        wheel3 = new Wheel();
-        wheel4 = new Wheel();
+        wheel3 = new DefaultWheel();
+        wheel4 = new DefaultWheel();
         transmission = new Transmission();
         door1 = new Door();
         door2 = new Door();
